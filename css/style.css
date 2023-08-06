@@ -552,7 +552,7 @@ section {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
     background: var(--color04);
   }
   h1 {
