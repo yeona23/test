@@ -548,11 +548,17 @@ section {
   #wrap {
     display: none;
   }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
   #wrap02 {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    height: 100vh;
-    /* height: -webkit-fill-available; */
+    height: -webkit-fill-available;
     background: var(--color04);
   }
   h1 {
