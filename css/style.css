@@ -13,17 +13,18 @@ font-family: 'Urbanist', sans-serif; */
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 header {
   width: 100%;
-  flex: 2;
+  height: 20vh;
   background-color: red;
 }
 main {
-  flex: 6;
+  height: 60vh;
   background-color: aliceblue;
 }
 footer {
-  flex: 2;
+  height: 20vh;
   background: blue;
 }
