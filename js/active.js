@@ -724,3 +724,16 @@
 
 // // 뷰포트 크기 변경 시 요소의 높이 재설정
 // window.addEventListener("resize", setDynamicHeight);
+
+window.addEventListener("load", () => {
+  updateVH();
+});
+
+// vh 값을 업데이트하는 함수
+function updateVH() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
+// 리사이즈 이벤트 감지 시 vh 값을 업데이트
+window.addEventListener("resize", updateVH);
